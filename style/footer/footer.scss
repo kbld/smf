@@ -1,0 +1,227 @@
+.slide img {
+  width: 180px;
+}
+
+@-webkit-keyframes logo-scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes logo-scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+/* menu */
+
+footer {
+  background-color: #560cca;
+  color: #fff;
+  .section-partners {
+    background-color: #ffcc08;
+    height: 100%;
+    width: 100%;
+    .logo-slider {
+      background: #ffcc08;
+      -webkit-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.125);
+      box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.125);
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      &::before,
+      &::after {
+        background: -webkit-gradient(
+          linear,
+          left top,
+          right top,
+          from(#ffcc08),
+          to(rgba(255, 255, 255, 0))
+        );
+        background: linear-gradient(
+          to right,
+          #ffcc08 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        content: "";
+        height: 175px;
+        position: absolute;
+        width: 200px;
+        z-index: 2;
+      }
+      &::after {
+        right: 0;
+        top: 0;
+        -webkit-transform: rotateZ(180deg);
+        transform: rotateZ(180deg);
+      }
+      &::before {
+        left: 0;
+        top: 0;
+      }
+      .logo-slide-track {
+        -webkit-animation: logo-scroll 60s linear infinite;
+        animation: logo-scroll 60s linear infinite;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: calc(250px * 14);
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+      }
+    }
+  }
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .footer-link li {
+    padding: 10px 0px;
+  }
+  .footer-link {
+    padding: 0px 60px;
+    .link-footer {
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: 0.5s;
+      display: inline-block;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        transition: transform 0.45s cubic-bezier(0.835, -0.005, 0.06, 1);
+        transform: scaleX(0);
+      }
+
+      &:after {
+        transform-origin: right;
+      }
+
+      &:hover:after {
+        transform-origin: left;
+        transform: scaleX(1);
+      }
+    }
+  }
+}
+
+.box-flex-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  .footer-logo-social {
+    display: block;
+    .logo-footer {
+      width: 80px;
+      display: block;
+    }
+    .social-box {
+      display: flex;
+
+      .social-icon {
+        width: 30px;
+        cursor: pointer;
+        margin: 20px 20px 0px 0px;
+
+        &:hover {
+          opacity: 0.5;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+.copyright-box {
+  text-align: center;
+  padding: 20px 0px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .box-flex-footer {
+    display: block;
+  }
+
+  .footer-column {
+    display: block;
+  }
+
+  .footer-link {
+    padding: 0px 0px;
+  }
+
+  footer .social-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-logo-social li {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-footer {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .footer-column .footer-link {
+    padding: 5px 20px;
+  }
+}
+
+.wave-full-footer {
+  width: 100%;
+  display: block;
+}
+
+.wave-mobile-footer {
+  width: 100%;
+  display: none;
+}
+
+@media only screen and (max-width: 1084px) {
+  .wave-mobile-footer {
+    width: 100%;
+    display: block;
+  }
+  .wave-full-footer {
+    width: 100%;
+    display: none;
+  }
+}

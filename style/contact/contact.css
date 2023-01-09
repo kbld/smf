@@ -1,0 +1,154 @@
+/* SCSS */
+@import "/style/header/header.css";
+@import "/style/elements/elements.css";
+@import "/style/footer/footer.css";
+/* SCSS */
+.box-link-contact { /* Lien de contact */
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0px;
+  margin: 0px 20px;
+}
+.box-link-contact .box-contact-element {
+  margin: 20px 0px;
+}
+.box-link-contact .box-contact-element h3 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 20px 0px;
+}
+.box-link-contact .box-contact-element a {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 0px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  padding: 10px 10px;
+  margin: 20px 0px;
+  transition: 0.2s;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+.box-link-contact .box-contact-element a:hover {
+  background-color: #ffcc08;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 50px 0px 20px 0px;
+}
+
+form { /* Formulaire de contact */
+  background-image: url(/img/back-contactform.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #ffcc08;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0px;
+}
+form .box-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+}
+form .box-form .flex-line-form {
+  display: block;
+  margin: 0px 20px;
+}
+form .box-form .flex-line-form label {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: italic;
+  display: block;
+  padding: 20px 0px 10px 0px;
+}
+form .box-form .flex-line-form input {
+  background-color: #fff;
+  border: 3px solid #000;
+  padding: 10px 13px;
+  outline: none;
+  width: 400px;
+  font-size: 16px;
+}
+form .flex-line-form {
+  display: block;
+  margin: 0px 20px;
+}
+form .flex-line-form label {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: italic;
+  display: block;
+  padding: 20px 0px 10px 0px;
+}
+form .flex-line-form textarea {
+  background-color: #fff;
+  border: 3px solid #000;
+  padding: 10px 13px;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+form input {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .title-pages {
+    font-size: 35px;
+  }
+  .box-volunteers {
+    display: block;
+  }
+  .img-volunteers-contact {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .sous-box-volunteers {
+    display: block;
+    padding: 70px 70px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  form .box-form {
+    display: block;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+  }
+  form .box-form .flex-line-form input {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(0, 0, 0);
+    padding: 10px 13px;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+  }
+  .box-link-contact {
+    display: block;
+  }
+  form input {
+    display: block;
+    margin: 0px auto;
+  }
+  .button-link {
+    margin: 10px auto;
+  }
+}/*# sourceMappingURL=contact.css.map */

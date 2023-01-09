@@ -1,0 +1,130 @@
+/* SCSS */
+@import "/style/header/header.css";
+@import "/style/elements/elements.css";
+@import "/style/footer/footer.css";
+
+/* SCSS */
+
+.accordions {
+  width: 100%;
+  .accordion-item {
+    background-color: #e1d4f5;
+    margin-bottom: 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    color: #ffffff;
+  }
+  .accordion-title {
+    cursor: pointer;
+    padding: 20px;
+    transition: transform 0.4s ease-in-out;
+
+    h3 {
+      text-align: center;
+      font-weight: 800;
+      text-transform: uppercase;
+      font-style: italic;
+      margin: 0;
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+      color: #000;
+      text-align: left;
+    }
+    i.fa-chevron-down {
+      transform: rotate(0);
+      transition: 0.4s;
+      height: 20px;
+    }
+
+    i.fa-chevron-down.chevron-top {
+      transform: rotate(-180deg);
+      color: #000000;
+    }
+  }
+  .accordion-content {
+    display: none;
+    line-height: 1.7;
+    padding: 0px 20px 20px 20px;
+    border-radius: 0 0 5px 5px;
+    color: #100e34;
+
+    p {
+      margin: 0;
+      font-size: 16px;
+    }
+  }
+}
+
+h2 {
+  /* Titre COMMENT VENIR SUR LE FESTIVAL ? */
+  color: rgb(0, 0, 0);
+  font-style: italic;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 80px 0px 40px 0px;
+}
+
+.frame {
+  /* Google Maps */
+  width: 100%;
+  border-radius: 10px;
+}
+
+.main-box-cards {
+  /* Cards informations comment venir */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 100px 0px 0px 0px;
+
+  .cards-come-purple {
+    /* Cards bleu */
+    color: #fff;
+    background-color: #560cca;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    transform: scale(1, 1);
+    transition: transform 0.5s ease;
+
+    &:hover {
+      transform: scale(1.1, 1.1);
+    }
+  }
+
+  .cards-come-yellow {
+    /* Cards jaune */
+    background-color: #ffcc08;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    transform: scale(1, 1);
+    transition: transform 0.5s ease;
+
+    &:hover {
+      transform: scale(1.1, 1.1);
+    }
+  }
+  .icon-cards-transport {
+    /* Icon transport */
+    padding: 10px 0px;
+  }
+
+  h3 {
+    /* Titre transport */
+    padding: 10px 0px;
+  }
+}

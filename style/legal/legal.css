@@ -1,0 +1,27 @@
+/* SCSS */
+@import "/style/header/header.css";
+@import "/style/elements/elements.css";
+@import "/style/footer/footer.css";
+/* SCSS */
+.text-box-legal {
+  max-width: 1200px;
+}
+
+.title-legal {
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 20px 10px 20px;
+  text-transform: uppercase;
+}
+
+.p-legal {
+  padding: 15px 20px 10px 20px;
+  font-weight: 300;
+}
+
+.list-legal {
+  padding: 15px 20px 10px 20px;
+  font-weight: 400;
+  list-style-type: circle;
+}/*# sourceMappingURL=legal.css.map */

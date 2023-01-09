@@ -1,0 +1,68 @@
+/* SCSS */
+@import "/style/header/header.css";
+@import "/style/elements/elements.css";
+@import "/style/footer/footer.css";
+/* SCSS */
+.partners-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-partners {
+  display: flex;
+  margin: 50px 20px;
+  background-color: #560cca;
+  border-radius: 20px;
+}
+.box-partners .img-partners-contact {
+  width: 50%;
+  height: auto;
+  background-image: url("/img/img-partners-2.png");
+  padding: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px 0px 0px 20px;
+}
+.box-partners .sous-box-partners {
+  display: block;
+  padding: 110px 70px;
+}
+.box-partners .sous-box-partners h3 {
+  color: #fff;
+  font-style: italic;
+  font-size: 22px;
+  padding: 0px 0px 20px 0px;
+  font-weight: 700;
+}
+.box-partners .sous-box-partners p {
+  color: #fff;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 0px 0px 20px 0px;
+}
+.box-partners .sous-box-partners a {
+  color: #fff;
+  font-style: italic;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px) {
+  .box-partners {
+    display: block;
+    margin: 50px 0px;
+  }
+  .box-partners .img-partners-contact {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .box-partners .sous-box-partners {
+    display: block;
+    padding: 70px 20px;
+  }
+}/*# sourceMappingURL=partenaires.css.map */
